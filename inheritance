@@ -1,0 +1,29 @@
+import java.util.*;
+ class vehicle{
+public void start(){
+System.out.println("vehicle starts");
+}
+}
+class car extends vehicle{
+    public void stop(){
+        System.out.println("self start");
+    }
+} class sportscar extends car{
+    public void accelerate(){
+        System.out.println("sports car");
+    }
+}
+public class main{
+public static void main(String[] args){
+    vehicle vehicle = new vehicle();
+    vehicle.start();
+    
+    car car = new car();
+    car.start();
+    car.stop();
+    sportscar sportscar = new sportscar();
+    sportscar.start();
+    sportscar.stop();
+    sportscar.accelerate();
+}
+}
